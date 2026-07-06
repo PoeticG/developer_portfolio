@@ -90,18 +90,18 @@
   box-sizing: border-box;
 }
 body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  color: #0f172a;
-  background: #f6f9fb;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
   line-height: 1.6;
 }
 .port-hero {
-  min-height: 78vh;
+  min-height: 80vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 3rem 5rem;
-  background: linear-gradient(135deg, #2563eb 0%, #0f172a 100%);
+  padding: 0 5rem;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
   color: #fff;
 }
 @media (max-width: 768px) {
@@ -111,30 +111,27 @@ body {
   }
 }
 .port-hero-text h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
-  margin-bottom: 0.6rem;
-  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
 }
 .port-hero-text p {
-  font-size: 1.05rem;
-  opacity: 0.9;
-  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
 }
 .port-cta {
   display: inline-block;
   background: #fff;
-  color: #0f172a;
-  padding: 0.9rem 2.25rem;
-  border-radius: 999px;
+  color: #2563eb;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
   text-decoration: none;
-  font-weight: 700;
-  transition: transform 0.18s, box-shadow 0.18s;
-  box-shadow: 0 8px 20px rgba(2,6,23,0.08);
+  font-weight: 600;
+  transition: transform 0.2s;
 }
 .port-cta:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 18px 36px rgba(2,6,23,0.12);
+  transform: translateY(-2px);
 }
 .port-hero-img {
   display: flex;
@@ -142,12 +139,11 @@ body {
   align-items: center;
 }
 .port-hero-img img {
-  width: 380px;
-  height: 380px;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 18px;
-  border: 0;
-  box-shadow: 0 20px 50px rgba(2,6,23,0.2);
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.2);
 }
 @media (max-width: 768px) {
   .port-hero-img img {
@@ -156,15 +152,15 @@ body {
   }
 }
 .port-section {
-  padding: 4rem 2rem;
-  max-width: 1000px;
+  padding: 5rem 2rem;
+  max-width: 900px;
   margin: 0 auto;
 }
 .port-section h2 {
-  font-size: 1.9rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 1.25rem;
+  color: #2563eb;
+  margin-bottom: 1.5rem;
 }
 .port-section p {
   font-size: 1.1rem;
@@ -177,12 +173,12 @@ body {
   gap: 0.75rem;
 }
 .skill-tag {
-  background: #0f172a;
+  background: #2563eb;
   color: #fff;
-  padding: 0.45rem 1rem;
-  border-radius: 999px;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .project-grid {
   display: grid;
@@ -193,12 +189,12 @@ body {
   background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 8px 28px rgba(15, 23, 42, 0.06);
-  transition: transform 0.18s, box-shadow 0.18s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 .project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 }
 .project-card h3 {
   color: #2563eb;
