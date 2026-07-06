@@ -210,3 +210,21 @@ body {
   color: #94a3b8;
   border-top: 1px solid #e2e8f0;
 }
+
+/* Contact block styles */
+.contact-block { max-width:900px; margin:3rem auto; text-align:center; padding:1rem; }
+.contact-links { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; margin-top:1rem; }
+.contact-btn {
+  display:inline-flex; align-items:center; gap:.7rem;
+  background:linear-gradient(135deg,#fff,#f3f4f6);
+  color:#0f172a; padding:.8rem 1.1rem; border-radius:999px;
+  text-decoration:none; font-weight:600; box-shadow:0 6px 18px rgba(16,24,40,0.06);
+  transition:transform .14s, box-shadow .14s, background .14s;
+}
+.contact-btn svg { display:block; color:#0f172a; }
+.contact-btn:hover { transform:translateY(-4px); box-shadow:0 14px 30px rgba(16,24,40,0.12); }
+.contact-btn.outline { background:transparent; border:1px solid rgba(15,23,42,0.08); color:#0f172a; }
+@media (prefers-color-scheme:dark) {
+  .contact-btn { background:linear-gradient(135deg,#0b1220,#0d1726); color:#fff; box-shadow:0 6px 22px rgba(2,6,23,0.6); }
+  .contact-btn.outline { border-color: rgba(255,255,255,0.08); }
+}
